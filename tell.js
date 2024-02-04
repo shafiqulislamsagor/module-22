@@ -28,4 +28,4 @@ function small(inc){
 
 const smallPerson = small(heights);
 
-console.log(smallPerson);
+console.log(`sobar soto tmi ${smallPerson}`);
