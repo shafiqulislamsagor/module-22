@@ -1,4 +1,4 @@
-const number = [121,355,154,326,75,256,425,356,956,125,278,265,295,245];
+
 
 // const filterFormat = [];
 
@@ -10,8 +10,27 @@ const number = [121,355,154,326,75,256,425,356,956,125,278,265,295,245];
 
 // console.log(filterFormat)
 
-const filters = number.filter(function(num){
-    return num <= 300
-})
+// const filters = number.filter(function(num){
+//     return num <= 300
+// })
 
-console.log(filters)
+// console.log(filters)
+
+const number = [100,355,154,326,75,256,425,356,956,125,278,265,295,245];
+
+
+
+const discountPrice = [];
+
+for(let i = 0 ; i < number.length ; i++){
+    const current = number[i];
+    if(current < 200){
+        const calcu = current - (current * 10)/100;
+        discountPrice.push(calcu);
+    }
+    else{
+        discountPrice.push(current);
+    }
+}
+
+console.log(discountPrice)
