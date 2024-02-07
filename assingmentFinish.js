@@ -84,3 +84,27 @@ function password(obj) {
     let result = upperWord.concat('#').concat(obj.name).concat('@').concat(obj.birthYear)
     return result;
 }
+
+
+
+function monthlySavings(arr, livingCost) {
+    if(!Array.isArray(arr) || typeof livingCost !== 'number'){
+        return 'Invalid Input...!'
+    }
+    let totalAmount = 0;
+    for(let i of arr){
+        if(3000 <= i){
+            totalAmount += i - (i * 0.2)
+        }
+        else{
+            totalAmount += i
+        }
+    }
+    let savingMoney = totalAmount - livingCost;
+    if(savingMoney >= 0){
+        return savingMoney;
+    }
+    else{
+        return 'Earn More'
+    }
+}

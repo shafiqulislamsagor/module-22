@@ -1,12 +1,8 @@
-const objt = { name: "sagor" , birthYear: 199 , siteName: "google" }
-
-if(objt.birthYear > 999 && objt.birthYear < 10000){
-    console.log('thik ase')
-}
-else{
-    console.log('thik nai')
+function calculateTwentyPercent(number) {
+    return number * 0.20;
 }
 
+const amount = 3000;
+const twentyPercent = calculateTwentyPercent(amount);
 
-
-
+console.log("20% of 3000 rupees is:", twentyPercent);
