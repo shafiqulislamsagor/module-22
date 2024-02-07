@@ -13,7 +13,6 @@ function calculateMoney(ticketSale) {
     return 'Invalid Number...!'
 }
 
-
 function checkName(name) {
     if (typeof name !== 'string' || parseInt.name) {
         return 'Invalid..!Please..String data types..'
@@ -49,8 +48,6 @@ function checkName(name) {
     }
 }
 
-
-
 function deleteInvalids(array) {
     if(Array.isArray(array) !== true){
         return 'Invalid Array'
@@ -63,9 +60,6 @@ function deleteInvalids(array) {
     }
     return newArray;
 }
-
-
-
 
 function password(obj) {
     if(!obj.name || !obj.birthYear|| obj.birthYear < 1000 || obj.birthYear > 9999 || !obj.siteName){
@@ -84,8 +78,6 @@ function password(obj) {
     let result = upperWord.concat('#').concat(obj.name).concat('@').concat(obj.birthYear)
     return result;
 }
-
-
 
 function monthlySavings(arr, livingCost) {
     if(!Array.isArray(arr) || typeof livingCost !== 'number'){
